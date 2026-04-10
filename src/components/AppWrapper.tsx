@@ -103,7 +103,7 @@ const AppWrapper = () => {
           result={lastResult}
           history={history}
           roundNum={roundNum}
-          isPB={isNewPersonalBest}
+          isNewPersonalBest={isNewPersonalBest}
           theme={theme}
           onNext={goPlay}
           onHome={goHome}
