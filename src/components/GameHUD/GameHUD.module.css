@@ -1,0 +1,87 @@
+.hud {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 10;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 0.5rem 1.25rem;
+  box-shadow: var(--shadow-md);
+  white-space: nowrap;
+  max-width: calc(100vw - 2rem);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 44px;
+}
+
+.label {
+  font-size: 0.6rem;
+  color: var(--ink3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  margin-bottom: 0.15rem;
+}
+
+.value {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.diffValue {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+.easy {
+  color: var(--green);
+}
+.medium {
+  color: var(--amber);
+}
+.hard {
+  color: var(--red);
+}
+
+.timeRed {
+  color: var(--red);
+}
+.timeAmber {
+  color: var(--amber);
+}
+
+.streak {
+  color: var(--amber);
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .hud {
+    gap: 0.5rem;
+    padding: 0.45rem 1rem;
+  }
+  .value {
+    font-size: 0.875rem;
+  }
+  .item {
+    min-width: 36px;
+  }
+}

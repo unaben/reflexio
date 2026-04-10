@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap');
+
+/* ── RESET ───────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+/* ── LIGHT THEME (default) ───────────────── */
+:root,
+[data-theme='light'] {
+  --bg:            #f5f3ff;
+  --bg-secondary:  #eeeaff;
+  --surface:       #ffffff;
+  --surface-hover: #f9f8ff;
+  --ink:           #1a1040;
+  --ink2:          #5a4e8a;
+  --ink3:          #9b8ec4;
+  --accent:        #5a3fcf;
+  --accent-hover:  #7c62e8;
+  --accent-light:  #ede9ff;
+  --border:        rgba(90, 63, 207, 0.15);
+  --border-strong: rgba(90, 63, 207, 0.3);
+  --green:         #1d9e75;
+  --green-light:   #e1f5ee;
+  --red:           #e24b4a;
+  --red-light:     #fcebeb;
+  --amber:         #ba7517;
+  --amber-light:   #faeeda;
+  --shadow-sm:     0 2px 8px rgba(90, 63, 207, 0.08);
+  --shadow-md:     0 4px 20px rgba(90, 63, 207, 0.12);
+  --shadow-box:    0 8px 32px rgba(90, 63, 207, 0.35);
+}
+
+/* ── DARK THEME ──────────────────────────── */
+[data-theme='dark'] {
+  --bg:            #0f0d1a;
+  --bg-secondary:  #161226;
+  --surface:       #1e1a30;
+  --surface-hover: #252040;
+  --ink:           #f0eeff;
+  --ink2:          #b8aee8;
+  --ink3:          #7a6fb0;
+  --accent:        #7c62e8;
+  --accent-hover:  #9b83f5;
+  --accent-light:  rgba(124, 98, 232, 0.18);
+  --border:        rgba(124, 98, 232, 0.2);
+  --border-strong: rgba(124, 98, 232, 0.4);
+  --green:         #2dcf9a;
+  --green-light:   rgba(45, 207, 154, 0.15);
+  --red:           #f06060;
+  --red-light:     rgba(240, 96, 96, 0.15);
+  --amber:         #f0a830;
+  --amber-light:   rgba(240, 168, 48, 0.15);
+  --shadow-sm:     0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md:     0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-box:    0 8px 32px rgba(124, 98, 232, 0.4);
+}
+
+/* ── TYPOGRAPHY ──────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: 'Syne', sans-serif;
+}
+
+button {
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+}
+
+/* ── SCROLLBAR ───────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }

@@ -1,0 +1,185 @@
+.page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.topBar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.inner {
+  width: 100%;
+  max-width: 520px;
+  padding-top: 2.5rem;
+}
+
+.backBtn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  color: var(--ink2);
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 1.25rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.backBtn:hover {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.heading {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.5rem, 6vw, 2rem);
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.summaryRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.summaryCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.875rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.summaryLabel {
+  font-size: 0.65rem;
+  color: var(--ink3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.summaryValue {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.1rem, 4vw, 1.4rem);
+  color: var(--accent);
+  line-height: 1;
+}
+
+.red {
+  color: var(--red) !important;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.row {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.875rem 1.125rem;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.rowFailed {
+  background: var(--red-light);
+  border-color: rgba(226, 75, 74, 0.25);
+}
+
+.rowNum {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 0.75rem;
+  color: var(--ink3);
+  min-width: 28px;
+  flex-shrink: 0;
+}
+
+.rowTime {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  flex: 1;
+}
+
+.good {
+  color: var(--green);
+}
+.okTime {
+  color: var(--amber);
+}
+.slow {
+  color: var(--red);
+}
+.miss {
+  color: var(--red);
+}
+
+.badge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  font-family: "Syne", sans-serif;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  flex-shrink: 0;
+}
+
+.badge.easy {
+  background: var(--green-light);
+  color: var(--green);
+}
+.badge.medium {
+  background: var(--amber-light);
+  color: var(--amber);
+}
+.badge.hard {
+  background: var(--red-light);
+  color: var(--red);
+}
+
+.pbMark {
+  font-size: 0.7rem;
+  color: var(--green);
+  font-weight: 700;
+  font-family: "Syne", sans-serif;
+  flex-shrink: 0;
+}
+
+.empty {
+  color: var(--ink3);
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 360px) {
+  .summaryRow {
+    gap: 0.4rem;
+  }
+  .row {
+    padding: 0.75rem 0.875rem;
+    gap: 0.625rem;
+  }
+}
