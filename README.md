@@ -1,5 +1,7 @@
 # Reflex.io
 
+Live: https://reflexio-sigma.vercel.app
+
 A mobile-first reflex reaction game built with React, TypeScript, and CSS Modules.
 
 ## Quick Start
